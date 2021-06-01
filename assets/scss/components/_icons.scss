@@ -1,0 +1,23 @@
+.social-icons {
+    $s: 18px;
+
+    display: flex;
+    align-items: center;
+
+    .social-icon {
+        width: $s;
+        height: $s;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        background-color: grey;
+        border-radius: 50%;
+        text-decoration: none;
+        margin-right: 5px;
+
+        i {
+            font-size: 10px;
+            color: $white;
+        }
+    }
+}

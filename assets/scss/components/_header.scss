@@ -1,0 +1,104 @@
+header {
+    .header-top {
+        display: none;
+        padding: 3px 0;
+    }
+
+    .header-main {
+        .navbar {
+            background-color: $primary;
+            padding-top: 10px;
+            padding-bottom: 10px;
+
+            .navbar-nav {
+                margin-right: 30px;
+
+                .nav-item {
+                    .nav-link {
+                        color: $white;
+                        font-weight: 600;
+
+                        &:hover {
+                            color: $secondary;
+                        }
+                    }
+                }
+            }
+
+        }
+
+        .header-search-box {
+            border: 2px solid $white;
+            border-radius: 50px;
+            margin-bottom: 0;
+
+            input,
+            button {
+                padding: 6px 16px;
+                outline: none;
+                box-shadow: none;
+                border: none;
+                background: none;
+                color: $white !important;
+            }
+        }
+    }
+
+    .login-register-header-button,
+    .cart-header-button {
+        text-decoration: none;
+        display: inline-flex;
+        align-items: center;
+    }
+}
+
+@media (max-width: 991px) {
+    header {
+        .header-main {
+            .navbar-toggler,
+            .search-toggler,
+            .login-register-header-button.mobile,
+            .cart-header-button.mobile {
+                flex: 0 0 10%;
+                background: none;
+                border: none;
+                color: $white;
+                font-size: 24px;
+                outline: none;
+            }
+
+            .navbar-brand {
+                flex: 1;
+                text-align: center;
+            }
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    header {
+        .header-top {
+            display: block;
+
+            .login-register-header-button,
+            .cart-header-button {
+                color: $primary;
+                font-size: 14px;
+                margin-left: 30px;
+
+                i {
+                    font-size: 150%;
+                }
+            }
+        }
+
+        .header-main {
+            .search-toggler,
+            #searchSupportedContent,
+            .login-register-header-button.mobile,
+            .cart-header-button.mobile {
+                display: none !important;
+            }
+        }
+    }
+}

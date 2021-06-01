@@ -1,0 +1,38 @@
+.home-hero {
+    .home-hero-image-mobile {
+        img {
+            width: 100%;
+        }
+    }
+
+    .home-hero-content {
+        padding: 100px 0 100px;
+        text-align: center;
+
+        h1 {
+            margin-bottom: 30px;
+        }
+
+        h6 {
+            margin-bottom: 40px;
+        }
+
+        div {
+            .btn:first-child {
+                margin-right: 10px;
+            }
+        }
+    }
+
+    @media (min-width: 992px) {
+        background-image: url('../images/home-hero-image.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+
+        .home-hero-content {
+            padding: 200px 0 300px;
+            text-align: left;
+        }
+    }
+}

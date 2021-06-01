@@ -1,0 +1,42 @@
+.content-image-section {
+    background-repeat: no-repeat;
+
+    
+
+    &-1 {
+        background-image: url('../images/content-image-1.png');
+        background-position: left top;
+        background-size: contain;
+
+        .content {
+            padding: 400px 0 100px;
+        }
+    }
+
+    &-2 {
+        background-image: url('../images/content-image-2.png');
+        background-position: right top;
+        background-size: contain;
+
+        .content {
+            padding: 400px 0 100px;
+        }
+    }
+
+    @media (min-width: 992px) {
+        .content {
+            padding: 100px 0;
+        }
+
+        &-1 {
+            background-image: url('../images/content-image-1.png');
+            background-position: left center;
+        }
+    
+        &-2 {
+            background-image: url('../images/content-image-2.png');
+            background-position: right center;
+        }
+    }
+
+}

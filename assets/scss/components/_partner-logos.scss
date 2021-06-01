@@ -1,0 +1,21 @@
+.partner-logos {
+    padding: 20px 0;
+    
+    .partner-logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        margin-bottom: 30px;
+
+        img {
+            max-width: 150px;
+            filter: grayscale(100%);
+            opacity: .6;
+
+            @media (max-width: 767px) {
+                width: 100%;
+            }
+        }
+    }
+}
